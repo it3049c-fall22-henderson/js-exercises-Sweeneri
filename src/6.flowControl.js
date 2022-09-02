@@ -10,7 +10,12 @@ function fizzBuzz(num) {
   let str = ``;
   if(num % 3 == 0) str = `fizz`;
   if(num % 5 == 0) str += `buzz`;
-  return str;
+  if(str.length > 0) { 
+    return str;
+  } else {
+    return num;
+  }
+
 }
 
 module.exports = {
