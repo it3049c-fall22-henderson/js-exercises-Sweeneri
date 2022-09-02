@@ -9,7 +9,7 @@ function reverseString(str) {
    * 
    * Can even be done on one line
    */
-  return str.split().reverse().join();
+  return str.split(``).reverse().join(``);
 }
 
 //capitalize: should return the input in all-caps
