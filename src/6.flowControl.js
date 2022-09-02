@@ -12,8 +12,10 @@ function fizzBuzz(num) {
   if(num % 5 == 0) str += `buzz`;
   if(str.length > 0) { 
     return str;
-  } else {
+  } else if(typeof num == `number`){
     return num;
+  } else {
+    return false; 
   }
 
 }
