@@ -49,7 +49,7 @@ function concat(arr1, arr2) {
 // hint: use splice and pay attention to the return value
 function insert(arr, item, index) {
   arr.splice(index, 0, item);
-  return ;
+  return arr;
 }
 
 // Square: you should be able to square each number in an array
