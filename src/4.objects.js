@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 /**
  * The following object must contain:
  *  `first_name`property that is of type string
@@ -9,7 +10,11 @@
  *      * must use the `class_of` property in the introduction
  */
 const personObject = {
-
+  first_name: `Reid`,
+  last_name: `Sweeney`,
+  class_of: 2024,
+  full_name() { return this.first_name + ` ` + this.last_name; },
+  introduction() { return `Hello, I am ` + this.full_name() + `. Class of ` + this.class_of + `.`; }
 };
 
 module.exports = {
